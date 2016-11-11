@@ -3,6 +3,7 @@
     "description": "Classe para manipulação de sessão no PHP",
     "version": "1.0",
     "type": "classe-utilitaria",
+    "homepage": "https://github.com/tayron/Session",
     "authors": [
         {
             "name": "Tayron Miranda",
