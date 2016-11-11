@@ -2,6 +2,7 @@
 
 Classe para manipulação de sessão no PHP
 
+
 ## Recursos
   - get($key)
   - set($key, $value)  
@@ -13,7 +14,8 @@ Classe para manipulação de sessão no PHP
   - getSessionId()
 
 
-2) Utilização via composer
+
+## Utilização via composer
 
 ```sh
     "repositories": [
