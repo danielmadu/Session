@@ -38,7 +38,7 @@ class Session
      */
     final public function __clone()
     {
-        throw new Exception('A classe Requisicao não pode ser clonada.');
+        throw new Exception('A classe Requisição não pode ser clonada.');
     }
 	
     /**
@@ -46,13 +46,13 @@ class Session
 	 * 
      * Impede que a classe Requisição execute __wakeup
      *
-     * @throws Exception Lança execção caso o usuário tente executar este método
+     * @throws Exception Lança exceção caso o usuário tente executar este método
      *
      * @return void
      */
     final public function __wakeup()
     {
-        throw new Exception('A classe Requisicao não pode executar __wakeup.');
+        throw new Exception('A classe Requisição não pode executar __wakeup.');
     }
 	
 	/**
@@ -62,7 +62,7 @@ class Session
 	 *
 	 * @staticvar Singleton $instancia A instância única dessa classe.
 	 *
-	 * @return Singleton A Instância única.
+	 * @return Singleton A instância única.
 	 */
 	public static function getInstance($minute = 1) 
 	{
@@ -114,11 +114,11 @@ class Session
     public function set($key, $value) 
     {
         if (empty($key)) {
-            throw new InvalidArgumentException('Deve-se informar um indentificador para o valor a ser armazenado');
+            throw new InvalidArgumentException('Deve-se informar um identificador para o valor a ser armazenado');
         }
 
         if (empty($value)) {
-            throw new InvalidArgumentException('Deve-se informar um valor para o indentificador informado');
+            throw new InvalidArgumentException('Deve-se informar um valor para o identificador informado');
         }
         
         $_SESSION[$key] = $value;
@@ -129,8 +129,8 @@ class Session
      * 
      * Método que retorna um dado na sessão
      * 
-     * @param string $key Indenfificador da sessão
-     * @return mixed Retorna o conteúdo de um indenfificador na sessão
+     * @param string $key Identificador da sessão
+     * @return mixed Retorna o conteúdo de um identificador na sessão
      */
     public function get($key)
     {
@@ -143,7 +143,7 @@ class Session
      * 
      * Método que remove um item da sessão
      * 
-     * @param string $key - Indenfificador da sessão
+     * @param string $key - Identificador da sessão
      * @return void
      */
     public function remove($key)
@@ -154,7 +154,7 @@ class Session
     /**
      * Session::clear
      * 
-     * Método que limpa todos os registros da sessao
+     * Método que limpa todos os registros da sessão
      * 
      * @return void
      */    
@@ -179,7 +179,7 @@ class Session
     /**
      * Session::isRegistered
      * 
-     * Métpdp que verifica se a sessão está registrada
+     * Método que verifica se a sessão está registrada
      *
      * @return boolean
      */
@@ -203,7 +203,7 @@ class Session
     /**
      * Session::renew
      * 
-     * Método que atualiza o tempo de inicio da sessão
+     * Método que atualiza o tempo de início da sessão
      * 
      * @return boolean
      */    
